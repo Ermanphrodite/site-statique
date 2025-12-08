@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculateur CSS Simple</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; max-width: 300px; margin: 0 auto; }
+        input, button { width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box; }
+        input { border: 1px solid #ccc; }
+        button { cursor: pointer; background: #ddd; border: 1px solid #999; }
+        button:hover { background: #ccc; }
+        #resultat { background-color: #f0f0f0; font-weight: bold; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <label>Largeur Totale (ex: 1680)</label>
+    <input type="number" id="total" value="1680">
+
+    <label>Taille en PX (ex: 84)</label>
+    <input type="number" id="px" placeholder="Entrez vos px">
+
+    <button onclick="calculer()">CALCULER</button>
+
+    <input type="text" id="resultat" readonly placeholder="0%">
+    
+    <button onclick="copier()">COPIER</button>
+
+    <script>
+        function calculer() {
+            const total = parseFloat(document.getElementById('total').value);
+            const px = parseFloat(document.getElementById('px').value);
+            
+            if (total && px) {
+                // Calcul du pourcentage avec 5 chiffres après la virgule
+                const res = (px / total) * 100;
+                document.getElementById('resultat').value = res.toFixed(5) + "%";
+            }
+        }
+
+        function copier() {
+            const champResultat = document.getElementById('resultat');
+            if(champResultat.value === "") return;
+
+            // Sélectionne et copie le texte
+            champResultat.select();
+            document.execCommand("copy"); // Méthode simple et compatible
+        }
+    </script>
+
+</body>
+</html>

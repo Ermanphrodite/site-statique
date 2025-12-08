@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'montserrat';
+    src: 
+        url('./ressources/font/Montserrat/Montserrat-VariableFont_wght.ttf'),
+        url('./ressources/font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf');
+        font-weight: 100 900;
+        font-style: normal;
+}
+
+:root {
+    --bleu : #152237;
+    --blanc : #FFFFFF;
+    --largeurdusite : 1680px;
+    --montserrat : montserrat, sans-serif
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #FFFFFF;
+    width: var(--largeurdusite);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--bleu);
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftNavbar, .centerNavbar, .rightNavbar {
+    width: 33.33%;
+}
+
+
+
+header nav .leftNavbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 168px;
+}
+
+header nav .leftNavbar img {
+    width: 84px;
+    height: 31px;
+    opacity: 1;
+}
+
+header nav .leftNavbar a {
+    text-decoration: none;
+    color: var(--blanc);
+    font-family: var(--montserrat);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    text-align: center;
+}
+
+
+
+header nav .centerNavbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav .centerNavbar input {
+    width: 477px;
+    height: 40px;
+    border-radius: 6px;
+    font-family: var(--montserrat);
+    font-size: 15px;
+    border: 1px solid var(--blanc);
+    background-color: var(--bleu);
+    
+}
+
+header nav .centerNavbar input::placeholder {
+    color: var(--blanc);
+    padding: 17px;
+}
+
+
+
+header nav .rightNavbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+}
+
+header nav .rightNavbar button {
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--montserrat);
+    font-weight: 500;
+
+} 
+
+header nav .rightNavbar button.inscriptionButton {
+    background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);   
+}

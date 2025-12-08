@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>KLIVIO - L'excellence</title>
 </head>
 <body>
     <header>
         <nav>
-            <div>
+            <div class="leftNavbar">
                 <img src="./ressources/logo.png" alt="logo de Klivio">
-                <button>Les formations</button>            
+                <a href="#">Les formations</a>            
             </div>
-            <form>
+            <form class="centerNavbar">
                 <label for="searchBar"></label>
                 <input type="search" name="searchBar" id="searchBar" aria-label="Rechercher" placeholder="Rechercher">
+                <img src="./ressources/icone/research.svg" alt="">
             </form>
-            <div>
-                <button>Connexion</button>
-                <button>Inscription</button>
+            <div class="rightNavbar">
+                <button class="connexionButton">Connexion</button>
+                <button class="inscriptionButton">Inscription</button>
             </div>
         </nav>
     </header>
+    
     <main>
         <section>
             <img src="./ressources/bg-header.png" alt="image d'une femme qui travaille sur son ordinateur">
