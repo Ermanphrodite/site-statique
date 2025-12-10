@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: 'montserrat';
     src: 
@@ -11,11 +17,6 @@
     --bleu : #152237;
     --blanc : #FFFFFF;
     --montserrat : montserrat, sans-serif
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
 }
 
 body {
@@ -42,6 +43,7 @@ header nav {
 
 .leftNavbar, .centerNavbar, .rightNavbar {
     width: 33.33%;
+    flex-shrink: 0;
 }
 
 header nav .leftNavbar {
@@ -81,16 +83,17 @@ header nav .centerNavbar form {
 }
 
 header nav .centerNavbar input {
-    width: 72.27273%;
-    max-height: 40px;
+    width: 100%;
+    max-width: 477px;
+    height: 40px;
+    padding-left: 17px;
     border-radius: 6px;
-    font-family: var(--montserrat);
     font-size: 15px;
+    font-family: var(--montserrat);
+    color: var(--blanc);
     border: 1px solid var(--blanc);
     background-color: var(--bleu);
     appearance: none;
-    padding: 3.56394%;
-    color: var(--blanc);
 }
 
 header nav .centerNavbar input::placeholder {
@@ -100,7 +103,7 @@ header nav .centerNavbar input::placeholder {
 header nav .centerNavbar input {
     background-image: url('./ressources/icone/research.svg');
     background-repeat: no-repeat;
-    background-position: right 8px center;
+    background-position: right 10px center;
 }
 
 
