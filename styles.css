@@ -16,7 +16,10 @@
 :root {
     --bleu : #152237;
     --blanc : #FFFFFF;
-    --montserrat : montserrat, sans-serif
+    --noir : #000000;
+    --montserrat : montserrat, sans-serif;
+    --gradient : linear-gradient(94.01deg, rgba(68, 221, 138, 0.8) 3.11%, rgba(21, 183, 226, 0.8) 98.45%);
+    --font15px : clamp(7.5px, 0.892857143vw, 15px)
 }
 
 body {
@@ -28,6 +31,9 @@ body {
     flex-direction: column;
 }
 
+
+/* HEADER */
+
 header {
     width: 100%;
     height: 80px;
@@ -38,19 +44,19 @@ header {
 header nav {
     width: 100%;
     display: flex;
-    justify-content: space-between;
 }
 
 .leftNavbar, .centerNavbar, .rightNavbar {
-    width: 33.33%;
-    flex-shrink: 0;
-}
-
-header nav .leftNavbar {
+    width: 33.33vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: min(168px, 10vw);
+}
+
+/* NAVBAR */
+
+header nav .leftNavbar {
+    gap: clamp(10px, 10vw, 168px);
 }
 
 header nav .leftNavbar img {
@@ -59,12 +65,12 @@ header nav .leftNavbar img {
 }
 
 header nav .leftNavbar a {
+    display: flex;
     text-decoration: none;
     color: var(--blanc);
     font-family: var(--montserrat);
     font-size: 15px;
     font-weight: 500;
-    line-height: 100%;
     letter-spacing: -1.5%;
     text-align: center;
     white-space: nowrap;
@@ -72,19 +78,8 @@ header nav .leftNavbar a {
 
 
 
-header nav .centerNavbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header nav .centerNavbar form {
-    display: flex;
-}
-
 header nav .centerNavbar input {
-    width: 100%;
-    max-width: 477px;
+    width: clamp(200px, 50vw, 477px);
     height: 40px;
     padding-left: 17px;
     border-radius: 6px;
@@ -109,26 +104,105 @@ header nav .centerNavbar input {
 
 
 header nav .rightNavbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 2.87879%;
 }
 
 header nav .rightNavbar button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 19.69697%;
+    width: 130px;
     height: 40px;
     border: none;
     border-radius: 6px;
     font-family: var(--montserrat);
     font-weight: 500;
-
 } 
 
 header nav .rightNavbar button.inscriptionButton {
     background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);   
 }
 
+
+
+
+
+/* HEROSLIDE */
+
+.hero {
+    width: 100%;
+    background-image: 
+    linear-gradient(to right, rgba(0, 255, 150, 0.8), rgba(0, 150, 255, 0.8)), url('/ressources/bg-header.png');
+    background-position: center;
+    background-size: cover;
+    padding: 156.5px 0;
+}
+
+.hero-texts {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-texts h1, .hero-texts h2, .hero-texts button {
+    font-family: var(--montserrat);
+}
+
+.hero-texts h1 {
+    font-size: clamp(24px, 2.857vw, 48px);
+    /* (48px / 1680px) * 100 = (x)vw */
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: var(--bleu);
+
+}
+
+.hero-texts h2 {
+    font-size: clamp(10px, 1.19047619vw, 20px);
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-top: 8px;
+    margin-bottom: 22px;
+    color: var(--noir);
+}
+
+.hero-texts button {
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 6px;
+    border: none;
+    white-space: nowrap;
+    padding: 11px 14px;
+    color: var(--bleu)
+}
+
+.formationsPopulaires h1 {
+    margin-top: 30px;
+    font-family: var(--montserrat);
+    color: var(--bleu);
+}
+
+.groupCardsFormations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5.35714286vw;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
