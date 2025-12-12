@@ -500,3 +500,24 @@ header nav .rightNavbar button.inscriptionButton {
     border: none;
     white-space: nowrap;
 }
+
+
+
+/* AVIS CLIENTS */
+
+.avis_Clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elements_Avis_Clients {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.cards_Avis_Clients {
+
+}
