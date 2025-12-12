@@ -19,7 +19,8 @@
     --noir : #000000;
     --montserrat : montserrat, sans-serif;
     --gradient : linear-gradient(94.01deg, rgba(68, 221, 138, 0.8) 3.11%, rgba(21, 183, 226, 0.8) 98.45%);
-    --font15px : clamp(7.5px, 0.892857143vw, 15px)
+    --font15px : clamp(7.5px, 0.892857143vw, 15px);
+    --jaune : #FFC700;
 }
 
 body {
@@ -192,17 +193,310 @@ header nav .rightNavbar button.inscriptionButton {
     color: var(--bleu)
 }
 
-.formationsPopulaires h1 {
+
+
+/* FORMATIONS POPULAIRES */
+
+.formations_Populaires {
+    display: flex;
+}
+
+.elements_Formations_Populaires {
+    width: 88.0357143%;
+    max-width: 1690px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.parent-h1-Formations_Populaires {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 72px;
     margin-top: 30px;
     font-family: var(--montserrat);
     color: var(--bleu);
+    font-weight: 800;   
 }
 
-.groupCardsFormations {
+.groupe_Cards_Formations_Populaires {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 34px;
+    justify-content: center;
+    gap: clamp(30px, 5.119047619vw, 150px);
+}
+
+
+.card_Formations_Populaires {
+    width: 305px;
+    height: min(362px, auto);
+    position: relative;
+    font-family: var(--montserrat);
+}
+
+.parent_Texts-Formations_Populaires {
+    padding-left: 12px;
+}
+
+.card_Formations_Populaires h2 {
+    width: 100%;
+    font-family: var(--montserrat);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -1.5%;
+    color: var(--bleu);
+    margin-top: 21px;
+}
+
+.para_card_Formations_Populaires-1 {
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0%;
+}
+
+.stars_Formations_Populaires {
+    width: 130px;
+    height: 19.2px;
+    margin-top: 5px;
+}
+
+.stars_Formations_Populaires img {
+    width: 20.13px;
+    height: 19.2px;
+}
+
+.stars_Opacited {
+    opacity: 30%;
+}
+
+.para_card_Formations_Populaires-2 {
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    margin-top: 10.8px;
+
+}
+
+.prix {width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 31.58px;
+    border-radius: 93px;
+    border: none;
+    background-color: var(--bleu);
+    color: var(--blanc);
+    gap: 7px;
+    position: absolute;
+    left: 174px;
+    top: 189.79px;
+    box-shadow: 5px 4px 13.2px -1px #00000040;
+
+}
+
+.prixGrand {
+    font-family: var(--montserrat);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -1.5%;
+
+}
+
+.prixPetit {
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 7px;
+    letter-spacing: -1.5%;
+    text-decoration: line-through;
+}
+
+
+
+.button_Formation_Populaires{
+    display: flex;
+    align-self: center;
+    margin-top: 43px;
+    margin-bottom: 51px;
+}
+
+.button_Formation_Populaires button {
+    width: 225px;
+    height: 40px;
+    font-family: var(--montserrat);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--blanc);
+    background-color: var(--bleu);
+    border-radius: 6px;
+    border: none;
+    white-space: nowrap;
+}
+
+
+
+
+
+/* FORMATIONS Recentes */
+
+.formations_Recentes {
+    display: flex;
+    background-color: var(--bleu);
+}
+
+.elements_Formations_Recentes {
+    width: 88.0357143%;
+    max-width: 1690px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 5.35714286vw;
+}
+
+.parent-h1-Formations_Recentes {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 72px;
     margin-top: 30px;
+    font-family: var(--montserrat);
+    color: var(--blanc);
+    font-weight: 800;   
+}
+
+.groupe_Cards_Formations_Recentes {
+    width: 100%;
+    display: flex;
     flex-wrap: wrap;
+    padding-top: 34px;
+    justify-content: center;
+    gap: clamp(30px, 5.119047619vw, 150px);
+}
+
+
+.card_Formations_Recentes {
+    width: 305px;
+    height: min(362px, auto);
+    position: relative;
+    font-family: var(--montserrat);
+}
+
+.parent_Texts-Formations_Recentes {
+    padding-left: 12px;
+}
+
+.card_Formations_Recentes h2 {
+    width: 100%;
+    font-family: var(--montserrat);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -1.5%;
+    color: var(--blanc);
+    margin-top: 21px;
+}
+
+.para_card_Formations_Recentes-1 {
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    color: var(--blanc);
+}
+
+.stars_Formations_Recentes {
+    width: 130px;
+    height: 19.2px;
+    margin-top: 5px;
+}
+
+.stars_Formations_Recentes img {
+    width: 20.13px;
+    height: 19.2px;
+}
+
+.stars_Opacited {
+    opacity: 30%;
+}
+
+.para_card_Formations_Recentes-2 {
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    margin-top: 10.8px;
+    color: var(--blanc);
+
+}
+
+.prixRecentes {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 31.58px;
+    border-radius: 93px;
+    border: none;
+    background-color: var(--blanc);
+    color: var(--bleu);
+    gap: 7px;
+    position: absolute;
+    left: 174px;
+    top: 189.79px;
+    box-shadow: 5px 4px 13.2px -1px #00000040;
+
+}
+
+.prixGrandRecentes {
+    font-family: var(--montserrat);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -1.5%;
+
+}
+
+.prixPetitRecentes {
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 7px;
+    letter-spacing: -1.5%;
+    text-decoration: line-through;
+}
+
+
+
+.button_Formation_Recentes{
+    display: flex;
+    align-self: center;
+    margin-top: 43px;
+    margin-bottom: 51px;
+}
+
+.button_Formation_Recentes button {
+    width: 225px;
+    height: 40px;
+    font-family: var(--montserrat);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--bleu);
+    background-color: var(--blanc);
+    border-radius: 6px;
+    border: none;
+    white-space: nowrap;
 }
