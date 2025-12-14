@@ -130,7 +130,7 @@ header nav button.inscriptionButton {
 .hero {
     width: 100%;
     background-image: 
-    linear-gradient(to right, rgba(0, 255, 150, 0.8), rgba(0, 150, 255, 0.8)), url("/ressources/bg-header-1.png");
+    linear-gradient(to right, rgba(0, 255, 150, 0.8), rgba(0, 150, 255, 0.8)), url("./ressources/bg-header-1.png");
     background-position: center;
     background-size: cover;
     padding: 156.5px 0;
