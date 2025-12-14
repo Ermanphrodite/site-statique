@@ -22,6 +22,7 @@
     margin: 0;
     padding: 0;
     font-family: var(--montserrat)
+
 }
 
 
@@ -32,6 +33,7 @@ body {
     background-color: var(--blanc);
     display: flex;
     flex-direction: column;
+    letter-spacing: -1.5%;
 }
 
 
@@ -44,44 +46,40 @@ header {
     display: flex;
 }
 
-header nav {
-    width: 100%;
-    display: flex;
-}
-
-.leftNavbar, .centerNavbar, .rightNavbar {
-    width: 33.33vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /* NAVBAR */
 
-header nav .leftNavbar {
-    gap: clamp(10px, 10vw, 168px);
+.navBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-header nav .leftNavbar img {
+header nav img {
     width: 84px;
     height: 31px;
+    margin-left: 5.83333333333333vw;
 }
 
-header nav .leftNavbar a {
+header nav a {
     display: flex;
     text-decoration: none;
     color: var(--blanc);
     font-size: 15px;
     font-weight: 500;
-    letter-spacing: -1.5%;
     text-align: center;
     white-space: nowrap;
+    margin-left: 10vw;
 }
 
+header nav form {
+    width: 28.39285714285714%;
+    margin-left: 8.51190476190476vw;
+    min-width: 100px;
+}
 
-
-header nav .centerNavbar input {
-    width: clamp(200px, 50vw, 477px);
+header nav input {
+    width: 100%;
     height: 40px;
     padding-left: 17px;
     border-radius: 6px;
@@ -90,37 +88,39 @@ header nav .centerNavbar input {
     border: 1px solid var(--blanc);
     background-color: var(--bleu);
     appearance: none;
+    min-width: 145px;
 }
 
-header nav .centerNavbar input::placeholder {
+header nav input::placeholder {
     color: var(--blanc);
 }
 
-header nav .centerNavbar input {
+header nav input {
     background-image: url('./ressources/icone/research.svg');
     background-repeat: no-repeat;
     background-position: right 10px center;
 }
 
-
-
-header nav .rightNavbar {
-    gap: 2.87879%;
-}
-
-header nav .rightNavbar button {
-    width: 130px;
-    height: 40px;
+header nav button {
+    padding: 11px 25px ;
     border: none;
     border-radius: 6px;
     font-weight: 500;
 } 
 
-header nav .rightNavbar button.inscriptionButton {
-    background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);   
+.connexionButton {
+    margin-left: 13.0952380952381vw;
 }
 
+header nav button.inscriptionButton {
+    background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);   
+    margin-left: 1.13095238095238vw;
+    margin-right: 6.54761904761905vw;
+}
 
+.burger {
+    display: none;
+}
 
 
 
@@ -144,15 +144,11 @@ header nav .rightNavbar button.inscriptionButton {
     flex-direction: column;
 }
 
-.hero-texts h1, .hero-texts h2, .hero-texts button {
-}
-
 .hero-texts h1 {
-    font-size: clamp(24px, 2.857vw, 48px);
+    font-size: clamp(32px, 2.857vw, 48px);
     /* (48px / 1680px) * 100 = (x)vw */
     font-weight: 800;
     line-height: 100%;
-    letter-spacing: -1.5%;
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
@@ -166,7 +162,6 @@ header nav .rightNavbar button.inscriptionButton {
     font-style: Medium;
     font-size: 20px;
     line-height: 100%;
-    letter-spacing: -1.5%;
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
@@ -181,7 +176,6 @@ header nav .rightNavbar button.inscriptionButton {
     font-weight: 500;
     font-size: 15px;
     line-height: 100%;
-    letter-spacing: -1.5%;
     text-align: center;
     vertical-align: middle;
     border-radius: 6px;
@@ -247,7 +241,6 @@ header nav .rightNavbar button.inscriptionButton {
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
-    letter-spacing: -1.5%;
     color: var(--bleu);
     margin-top: 21px;
 }
@@ -305,7 +298,6 @@ header nav .rightNavbar button.inscriptionButton {
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
-    letter-spacing: -1.5%;
 
 }
 
@@ -313,7 +305,6 @@ header nav .rightNavbar button.inscriptionButton {
     font-weight: 400;
     font-size: 10px;
     line-height: 7px;
-    letter-spacing: -1.5%;
     text-decoration: line-through;
 }
 
@@ -392,7 +383,6 @@ header nav .rightNavbar button.inscriptionButton {
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
-    letter-spacing: -1.5%;
     color: var(--blanc);
     margin-top: 21px;
 }
@@ -453,7 +443,6 @@ header nav .rightNavbar button.inscriptionButton {
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
-    letter-spacing: -1.5%;
 
 }
 
@@ -461,7 +450,6 @@ header nav .rightNavbar button.inscriptionButton {
     font-weight: 400;
     font-size: 10px;
     line-height: 7px;
-    letter-spacing: -1.5%;
     text-decoration: line-through;
 }
 
@@ -505,13 +493,13 @@ header nav .rightNavbar button.inscriptionButton {
     font-style: Black;
     font-size: 40px;
     line-height: 36px;
-    letter-spacing: -1.5%;
     text-transform: uppercase;
     color: var(--bleu);
 }
 
 .elements_Avis_Clients {
     width: 82.02380952vw;
+    max-width: 1690px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -529,7 +517,6 @@ header nav .rightNavbar button.inscriptionButton {
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
-    letter-spacing: -1.5%;
 }
 
 .cards_Avis_Clients p {
@@ -537,7 +524,6 @@ header nav .rightNavbar button.inscriptionButton {
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
-    letter-spacing: -1.5%;
 }
 
 .avis_Clients_Photos {
@@ -556,6 +542,30 @@ header nav .rightNavbar button.inscriptionButton {
 
 
 
+/* LES AVANTAGES CLIVIO */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 1678px) {
@@ -565,10 +575,62 @@ header nav .rightNavbar button.inscriptionButton {
     }
 }
 
+
+@media screen and (max-width: 900px) {
+    header nav a {
+        margin-left: 6vw;
+    }
+}
+
 @media screen and (max-width: 768px) {
-    .connexionButton, .inscriptionButton, input#searchBar, a {
+    .navBar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .connexionButton, .inscriptionButton, input#searchBar, header nav a {
         display: none;
     }
+
+    .navBar img {
+        margin-left: 27px;
+    }
+
+    .burger {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        width: 24px;
+        height: 24px;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        color: var(--blanc);
+        font-size: 30px;
+        margin-right: 37px;
+    }
+
+    .hero {
+        padding: 0 0;
+    }
+
+    
+    .hero-texts h1 {
+        width: 91.6030534351145vw;
+        margin-top: 47px;
+    }
+    .hero-texts h2 {
+        width: 91.6030534351145vw;
+        margin-top: 27px;
+        margin-bottom: 0;
+    }
+
+    .hero-texts button {
+    margin-top: 27px;
+    margin-bottom: 34px;
+    }
+
+
     .avis_Clients h1 {
         margin-top: 28px;
     }
