@@ -606,18 +606,100 @@ header nav button.inscriptionButton {
 
 
 
-.li1, .li2, .li3, .li4, .li5, .li6, .li7, .li8, .li9, .li10, .li11 {
+.li1, .li2, .li3, .li4, .li5, .li6 {
     position: relative;
 }
 
-.li1::before, .li2::before, .li3::before, .li4::before, .li5::before, .li6::before, .li7::before, .li8::before, .li9::before, .li10::before, .li11::before  {
+.li1::before, .li2::before, .li3::before, .li4::before, .li5::before, .li6::before  {
     content:"\f00c";
     font-family: "Font Awesome 6 Free";
     font-weight: 600;
     position: absolute;
     font-size: 30px;
-    left: -47px
+    left: -47px;
+    color: var(--vert)
 }
+
+
+
+
+
+
+
+
+
+/* CREEZ VOS FORMATIONS */
+
+.creer_Formations {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--vert);
+    padding-top: 76px;
+    padding-left: 5.83333333333333vw;
+    padding-right: 6.13095238095238vw;
+    padding-bottom: 93px;
+    gap: 4.22619047619048vw;
+}
+
+.elements_creer_formations {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px;
+}
+
+.elements_creer_formations h1 {
+    width: 100%;
+    display: flex;
+    font-weight: 900;
+    font-style: Black;
+    font-size: 40px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: var(--bleu);
+
+}
+
+.elements_creer_formations ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 43px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    max-width: 616px;
+    padding-left: 3.86904761904762vw;
+}
+
+.parent_image_creer_formations {
+    margin: auto;
+}
+
+.parent_image_creer_formations img {
+    max-width: 100%;
+    height: auto;
+}
+
+.elements_creer_formations ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.li7, .li8, .li9, .li10, .li11 {
+    position: relative;
+}
+
+.li7::before, .li8::before, .li9::before, .li10::before, .li11::before {
+    content:"\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 30px;
+    left: -47px;
+    color: var(--blanc);
+ }
 
 
 
@@ -649,6 +731,41 @@ header nav button.inscriptionButton {
 
     .avantages_Klivio {
         flex-direction: column;
+    }
+
+    .avantages_Klivio {
+        padding: 0;
+        padding-top: 25px;
+        align-items: center;    
+    }
+
+    .elements_Avantages_Klivio {
+        display: flex;
+        align-items: center;
+    }
+
+    .elements_Avantages_Klivio h1 {
+        width: 349px;
+        height: 93px;
+        font-weight: 900;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .elements_Avantages_Klivio ul {
+        margin-top: 0;
+        font-weight: 400;
+        font-size: 20px;
+        padding-left: 75px;
+        padding-right: 22px;
+    }
+
+    .parent_image_Avantages_Klivio img {
+        width: 83.20610687022901vw;
+        height: 244px;
+        object-fit: cover;
+        background-position: center;
+        margin-bottom: 38px;
     }
 }
 
@@ -724,18 +841,21 @@ header nav button.inscriptionButton {
 
 
 
-    .avantages_Klivio {
+
+
+
+    .creer_Formations {
         padding: 0;
         padding-top: 25px;
         align-items: center;    
     }
 
-    .elements_Avantages_Klivio {
+    .elements_creer_formations {
         display: flex;
         align-items: center;
     }
 
-    .elements_Avantages_Klivio h1 {
+    .elements_creer_formations h1 {
         width: 349px;
         height: 93px;
         font-weight: 900;
@@ -743,7 +863,7 @@ header nav button.inscriptionButton {
         text-align: center;
     }
 
-    .elements_Avantages_Klivio ul {
+    .elements_creer_formations ul {
         margin-top: 0;
         font-weight: 400;
         font-size: 20px;
@@ -751,7 +871,7 @@ header nav button.inscriptionButton {
         padding-right: 22px;
     }
 
-    .parent_image_Avantages_Klivio img {
+    .parent_image_creer_formations img {
         width: 83.20610687022901vw;
         height: 244px;
         object-fit: cover;
