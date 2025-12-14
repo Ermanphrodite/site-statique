@@ -1,9 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 @font-face {
     font-family: 'montserrat';
     src: 
@@ -22,6 +16,14 @@
     --font15px : clamp(7.5px, 0.892857143vw, 15px);
     --jaune : #FFC700;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--montserrat)
+}
+
 
 body {
     width: 100%;
@@ -69,7 +71,6 @@ header nav .leftNavbar a {
     display: flex;
     text-decoration: none;
     color: var(--blanc);
-    font-family: var(--montserrat);
     font-size: 15px;
     font-weight: 500;
     letter-spacing: -1.5%;
@@ -85,7 +86,6 @@ header nav .centerNavbar input {
     padding-left: 17px;
     border-radius: 6px;
     font-size: 15px;
-    font-family: var(--montserrat);
     color: var(--blanc);
     border: 1px solid var(--blanc);
     background-color: var(--bleu);
@@ -113,7 +113,6 @@ header nav .rightNavbar button {
     height: 40px;
     border: none;
     border-radius: 6px;
-    font-family: var(--montserrat);
     font-weight: 500;
 } 
 
@@ -146,7 +145,6 @@ header nav .rightNavbar button.inscriptionButton {
 }
 
 .hero-texts h1, .hero-texts h2, .hero-texts button {
-    font-family: var(--montserrat);
 }
 
 .hero-texts h1 {
@@ -195,6 +193,10 @@ header nav .rightNavbar button.inscriptionButton {
 
 
 
+
+
+
+
 /* FORMATIONS POPULAIRES */
 
 .formations_Populaires {
@@ -216,7 +218,6 @@ header nav .rightNavbar button.inscriptionButton {
     align-items: center;
     height: 72px;
     margin-top: 30px;
-    font-family: var(--montserrat);
     color: var(--bleu);
     font-weight: 800;   
 }
@@ -235,7 +236,6 @@ header nav .rightNavbar button.inscriptionButton {
     width: 305px;
     height: min(362px, auto);
     position: relative;
-    font-family: var(--montserrat);
 }
 
 .parent_Texts-Formations_Populaires {
@@ -244,7 +244,6 @@ header nav .rightNavbar button.inscriptionButton {
 
 .card_Formations_Populaires h2 {
     width: 100%;
-    font-family: var(--montserrat);
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
@@ -254,7 +253,6 @@ header nav .rightNavbar button.inscriptionButton {
 }
 
 .para_card_Formations_Populaires-1 {
-    font-family: var(--montserrat);
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;
@@ -277,7 +275,6 @@ header nav .rightNavbar button.inscriptionButton {
 }
 
 .para_card_Formations_Populaires-2 {
-    font-family: var(--montserrat);
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
@@ -305,7 +302,6 @@ header nav .rightNavbar button.inscriptionButton {
 }
 
 .prixGrand {
-    font-family: var(--montserrat);
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
@@ -314,7 +310,6 @@ header nav .rightNavbar button.inscriptionButton {
 }
 
 .prixPetit {
-    font-family: var(--montserrat);
     font-weight: 400;
     font-size: 10px;
     line-height: 7px;
@@ -334,7 +329,6 @@ header nav .rightNavbar button.inscriptionButton {
 .button_Formation_Populaires button {
     width: 225px;
     height: 40px;
-    font-family: var(--montserrat);
     font-size: 15px;
     font-weight: 500;
     color: var(--blanc);
@@ -370,7 +364,6 @@ header nav .rightNavbar button.inscriptionButton {
     align-items: center;
     height: 72px;
     margin-top: 30px;
-    font-family: var(--montserrat);
     color: var(--blanc);
     font-weight: 800;   
 }
@@ -384,12 +377,10 @@ header nav .rightNavbar button.inscriptionButton {
     gap: clamp(30px, 5.119047619vw, 150px);
 }
 
-
 .card_Formations_Recentes {
     width: 305px;
     height: min(362px, auto);
     position: relative;
-    font-family: var(--montserrat);
 }
 
 .parent_Texts-Formations_Recentes {
@@ -398,7 +389,6 @@ header nav .rightNavbar button.inscriptionButton {
 
 .card_Formations_Recentes h2 {
     width: 100%;
-    font-family: var(--montserrat);
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
@@ -408,7 +398,6 @@ header nav .rightNavbar button.inscriptionButton {
 }
 
 .para_card_Formations_Recentes-1 {
-    font-family: var(--montserrat);
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;
@@ -432,7 +421,6 @@ header nav .rightNavbar button.inscriptionButton {
 }
 
 .para_card_Formations_Recentes-2 {
-    font-family: var(--montserrat);
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
@@ -462,7 +450,6 @@ header nav .rightNavbar button.inscriptionButton {
 }
 
 .prixGrandRecentes {
-    font-family: var(--montserrat);
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
@@ -471,15 +458,12 @@ header nav .rightNavbar button.inscriptionButton {
 }
 
 .prixPetitRecentes {
-    font-family: var(--montserrat);
     font-weight: 400;
     font-size: 10px;
     line-height: 7px;
     letter-spacing: -1.5%;
     text-decoration: line-through;
 }
-
-
 
 .button_Formation_Recentes{
     display: flex;
@@ -491,7 +475,6 @@ header nav .rightNavbar button.inscriptionButton {
 .button_Formation_Recentes button {
     width: 225px;
     height: 40px;
-    font-family: var(--montserrat);
     font-size: 15px;
     font-weight: 500;
     color: var(--bleu);
@@ -503,21 +486,107 @@ header nav .rightNavbar button.inscriptionButton {
 
 
 
+
+
+
+
 /* AVIS CLIENTS */
 
 .avis_Clients {
     display: flex;
+    height: auto;
     flex-direction: column;
     align-items: center;
 }
 
+.avis_Clients h1 {
+    margin-top: 58px;
+    font-weight: 900;
+    font-style: Black;
+    font-size: 40px;
+    line-height: 36px;
+    letter-spacing: -1.5%;
+    text-transform: uppercase;
+    color: var(--bleu);
+}
+
 .elements_Avis_Clients {
-    width: 100%;
+    width: 82.02380952vw;
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    justify-content: center;
+    margin-top: 66px;
+    margin-bottom: 131px;
+    gap: 1.42857142857143vw;
 }
 
 .cards_Avis_Clients {
+    width: 48.69375907111756%;
+    height: auto;
+}
 
+.cards_Avis_Clients h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -1.5%;
+}
+
+.cards_Avis_Clients p {
+    margin-top: 13.8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: -1.5%;
+}
+
+.avis_Clients_Photos {
+    width: 139px;
+    height: 139px;
+    border-radius: 100px;
+
+}
+
+.avis_stars {
+    margin-top: 7px;
+    height: 19.2px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1678px) {
+    .parent-h1-Formations_Populaires, .parent-h1-Formations_Recentes {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .connexionButton, .inscriptionButton, input#searchBar, a {
+        display: none;
+    }
+    .avis_Clients h1 {
+        margin-top: 28px;
+    }
+    .elements_Avis_Clients {
+        flex-direction: column;
+        align-items: center;
+        width: 88.0559796437659vw;
+        gap: 50px;
+        margin: 0;
+        margin-top: 26px;
+        margin-bottom: 28px;
+    }
+    .cards_Avis_Clients {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cards_Avis_Clients p {
+        text-align: left;
+    }
 }
