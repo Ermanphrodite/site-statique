@@ -656,9 +656,9 @@ header nav button.inscriptionButton {
     gap: 8.75vw;
 }
 
-    .elements_creer_formations .h1-mobile {
+.parent_image_creer_formations .h1-mobile {
         display: none;
-    }
+}
 
 
 .elements_creer_formations h1 {
@@ -810,6 +810,25 @@ header nav button.inscriptionButton {
         text-align: center;
     }
 
+    .elements_creer_formations .h1-desk {
+        display: none;
+    }
+
+    .parent_image_creer_formations .h1-mobile {
+        display: flex;
+        justify-content: center;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: -1.5%;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--bleu);
+        width: 83.20610687022901vw;
+        text-align: center;
+        margin-bottom: 13px;
+    }
+
     .elements_creer_formations ul {
         margin-top: 0;
         font-weight: 400;
@@ -827,6 +846,9 @@ header nav button.inscriptionButton {
         margin-bottom: 22px;
     }
 
+    .li7::before, .li8::before, .li9::before, .li10::before, .li11::before {
+    left: -70px;
+    }
 }
 
 @media screen and (max-width: 768px) {
