@@ -865,6 +865,7 @@ textarea {
     height: 18px;
     background: var(--gradient);
     margin-top: 77.42px;
+    border: none;
 }
 
 .form_nous_contacter input::placeholder, .form_nous_contacter textarea::placeholder {
@@ -1343,21 +1344,32 @@ footer {
         color: var(--blanc);
     }
 
+    .parent_footer_logo {
+        margin-top: 45px;
+    }
+
     .parent_footer_logo img {
         width: 61.8320611vw;
-        max-width: 243px;
         height: auto;
-        max-height: 87px;
     }
 
     .footer_conteneur_superieur {
         flex-direction: column;
         align-items: center;
         padding: 0;
+        margin: 0;
     }
 
     .footer_elements_central_superieur {
         flex-direction: column;
         align-items: center;
+        margin: 0;
+    }
+
+    .footer_mentions {
+        margin: 0;
+        margin-top: 45px;
+        margin-bottom: 16px;
+        text-align: center;
     }
 }
