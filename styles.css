@@ -609,10 +609,6 @@ header nav button.inscriptionButton {
     padding-left: 0;
 }
 
-
-
-
-
 .li1, .li2, .li3, .li4, .li5, .li6 {
     position: relative;
 }
@@ -637,6 +633,12 @@ header nav button.inscriptionButton {
 
 /* CREEZ VOS FORMATIONS */
 
+.creer_Formations {
+    background-color: var(--vert);
+    display: flex;
+    justify-content: center;
+}
+
 .elements_creer_formations {
     display: flex;
     flex-direction: column;
@@ -654,6 +656,7 @@ header nav button.inscriptionButton {
     padding-right: 5.05952380952381vw;
     padding-bottom: 93px;
     gap: 8.75vw;
+    max-width: 1680px;
 }
 
 .parent_image_creer_formations .h1-mobile {
@@ -714,10 +717,61 @@ header nav button.inscriptionButton {
  }
 
 
+/* À PROPOS DE KLIVIO */
 
+.apropos_klivio {
+    display: flex;
+    justify-content: center;
+    background-color: #F5F5F5;
+}
 
+.responsive_apropos_klivio {
+    width: 100%;
+    display: flex;
+}
 
+.elements_apropos_klivio {
+    width: 50.5952381vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    align-items: center;
+    justify-content: center;
+    padding: 183px 0;
+    padding-left: 6.13095238vw;
+    padding-right: 3.63095238vw;
 
+}
+
+.elements_apropos_klivio h1 {
+    width: 100%;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-bottom: 41px;
+}
+
+.elements_apropos_klivio p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.parent_logo_apropos_klivio {
+    width: 49.4047619vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bleu);
+}
+
+.parent_logo_apropos_klivio img {
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+}
 
 
 
@@ -785,11 +839,6 @@ header nav button.inscriptionButton {
         margin-bottom: 38px;
     }
 
-    
-
-
-
-
     .groupe-elements_creer_formations {
         flex-direction: column;
         padding: 0;
@@ -849,6 +898,83 @@ header nav button.inscriptionButton {
     .li7::before, .li8::before, .li9::before, .li10::before, .li11::before {
     left: -70px;
     }
+
+    .responsive_apropos_klivio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .elements_apropos_klivio {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #F5F5F5;
+        align-items: center;
+        justify-content: center;
+        padding: 25px 0;
+        padding-left: 6.13095238vw;
+        padding-right: 3.63095238vw;
+    }
+
+
+    .elements_apropos_klivio h1 {
+        width: 322.96px;
+        font-weight: 900;
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 36px;
+        text-align: center;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .parent_logo_apropos_klivio {
+        width: 100%;
+        height: 370px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bleu);
+    }
+
+    .parent_logo_apropos_klivio img {
+        width: 100%;
+        max-width: 54.45292621vw;
+        height: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 }
 
 @media screen and (max-width: 768px) {
