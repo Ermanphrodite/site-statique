@@ -91,12 +91,28 @@ header nav input {
     min-width: 145px;
 }
 
+.centerNavbar {
+    display: flex;
+    position: relative;
+}
+
+.centerNavbar::after {
+  content: "\f002";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--blanc);
+}
+
 header nav input::placeholder {
     color: var(--blanc);
 }
 
 header nav input {
-    background-image: url('./ressources/icone/research.svg');
     background-repeat: no-repeat;
     background-position: right 10px center;
 }
@@ -1178,6 +1194,14 @@ footer {
     .parent-h1-Formations_Populaires, .parent-h1-Formations_Recentes {
         justify-content: center;
         text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 1054px) {
+    .centerNavbar::after {
+        content: "";
+        font-family: "";
     }
 }
 
