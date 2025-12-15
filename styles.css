@@ -779,6 +779,269 @@ header nav button.inscriptionButton {
 
 
 
+/* NOUS CONTACTER */
+
+
+.nous_contacter {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+.form_nous_contacter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elements_form_nous_contacter {
+    display: flex;
+    justify-content: center;
+    gap: 8.2142857vw;
+    margin-top: 55px;
+}
+
+.elements_form_nous_contacter input {
+    width: 35.6547619vw;
+    background: var(--bleu);
+    height: 45.25px;
+}
+
+.elements_form_nous_contacter label {
+    display: none;
+}
+
+textarea {
+    width: 79.5190476vw;
+    margin-top: 55.75px;
+    background: var(--bleu);
+    height: 194.64px;
+}
+
+.nous_contacter h1{
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: var(--bleu);
+    margin-top: 60px;
+}
+
+.nous_contacter hr.ligne_sous_nous_contacter {
+    width: 20.8333333vw;
+    border: 1px solid #44DD8A;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 39px;
+}
+
+.buttonEnvoyer {
+    margin-top: 54.64px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonEnvoyer button {
+    width: 20.9261905vw;
+    height: 45.3px;
+    border-radius: 6px;
+    background: var(--vert);
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ligne_basse_nous_contacter {
+    height: 18px;
+    background: var(--gradient);
+    margin-top: 77.42px;
+}
+
+.form_nous_contacter input::placeholder, .form_nous_contacter textarea::placeholder {
+    padding-left: 18px;
+    color: var(--blanc);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.form_nous_contacter textarea::placeholder {
+    padding-top: 15px;
+}
+
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 471px;
+    background: var(--bleu);
+    color: var(--blanc);
+    padding-left: 5.7142857vw;
+    padding-right: 6.0714286vw;
+}
+
+.footer_conteneur_superieur {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 91px;
+}
+
+.parent_footer_logo img {
+    width: 14.4642857vw;
+    max-width: 243px;
+    height: auto;
+    max-height: 87px;
+}
+
+
+
+
+.footer_elements_central_superieur {
+    display: flex;
+    margin-top: 11px;
+    margin-bottom: 28px;
+    gap: 65px;
+}
+
+.footer_mentions h2 {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.footer_mentions ul {
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.footer_mentions ul li a {
+    text-decoration: none;
+    color: var(--blanc);
+
+}
+
+.footer_coordonnees h2 {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.footer_coordonnees ul {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 43px;
+}
+
+.coordonnees_email {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 31px;
+}
+
+.footer_buttons {
+    margin-top: 11px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer_button_connexion {
+    padding: 0 22.25px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    background: var(--blanc);
+    border-radius: 6px;
+    border: none;
+}
+
+.footer_button_inscription {
+    padding: 0 22.25px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);
+    border-radius: 6px;
+    border: none;
+}
+
+
+
+.ligne_basse_footer {
+    background-color: var(--vert);
+    height: 1px;
+    border: none;
+    margin-bottom: 25px;
+}
+
+
+
+.footer_conteneur_inferieur {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_conteneur_inferieur p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.footer_reseaux {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.suivez-nous {
+    margin-right: 24px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: right;
+    text-decoration: none;
+    color: var(--blanc);
+}
+
+
+.facebook {
+    margin-right: 21px;
+}
+
+.X {
+    margin-right: 21px;
+}
+
+.instagram {
+    margin-right: 15px;
+}
+
+
 
 
 
@@ -944,36 +1207,6 @@ header nav button.inscriptionButton {
         height: auto;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
 }
 
@@ -1045,5 +1278,86 @@ header nav button.inscriptionButton {
 
     .cards_Avis_Clients p {
         text-align: left;
+    }
+
+    .elements_form_nous_contacter {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 0;
+        margin-top: 0px;
+    }
+
+    .nous_contacter h1 {
+        font-weight: 900;
+        font-style: Black;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: -1.5px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        margin-top: 29px;
+
+    }
+
+    .elements_form_nous_contacter input, textarea {
+        width: 90.5852417vw;
+        margin: 0;
+        margin-top: 21px;
+    }
+
+    .buttonEnvoyer {
+        margin: 0;
+    }
+
+    .buttonEnvoyer button {
+        margin-top: 22px;
+        width: 90.5852417vw;
+    }
+    
+    .ligne_sous_nous_contacter {
+        display: none;
+    }
+
+    .ligne_basse_nous_contacter {
+        margin-top: 38px;
+    }
+
+    .footer_conteneur_inferieur {
+        display: none;
+    }
+
+    .ligne_basse_footer {
+        display: none;
+    }
+
+    .footer_buttons {
+        display: none;
+    }
+
+    footer {
+        height: 555px;
+        padding: 0;
+        background: var(--bleu);
+        color: var(--blanc);
+    }
+
+    .parent_footer_logo img {
+        width: 61.8320611vw;
+        max-width: 243px;
+        height: auto;
+        max-height: 87px;
+    }
+
+    .footer_conteneur_superieur {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .footer_elements_central_superieur {
+        flex-direction: column;
+        align-items: center;
     }
 }

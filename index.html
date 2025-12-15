@@ -274,37 +274,6 @@
             </div>
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <section class="apropos_klivio">
             <div class="responsive_apropos_klivio">
                 <div class="elements_apropos_klivio">
@@ -319,70 +288,66 @@
             </div>
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <section>
+        <section class="nous_contacter">
             <h1>NOUS CONTACTER</h1>
-            <form>
-                <div>
+            <hr class="ligne_sous_nous_contacter">
+            <form class="form_nous_contacter">
+                <div class="elements_form_nous_contacter">
                     <label for="nom"></label>
                     <input type="text" name="nom" id="nom" placeholder="Nom">
                     <label for="email"></label>
                     <input type="text" name="email" id="email" placeholder="Email">
                 </div>
-                <textarea name="" id="textareaContact"></textarea>
+                <textarea name="textarea" id="textareaContact" placeholder="Votre message"></textarea>
             </form>
-            <button>Envoyer</button>
+            <div class="buttonEnvoyer">
+                <button>Envoyer</button>
+            </div>
+            <hr class="ligne_basse_nous_contacter">
         </section>
     </main>
+
     <footer>
-        <hr>
-        <!-- bannière dégradée -->
-        <div>
-            <img src="#" alt="Logo Klivio">
-            <div>
-                <h2>Mentions Légales</h2>
-                <ul>
-                    <li>CGU</li>
-                    <li>CGV</li>
-                    <li>FAQ</li>
-                    <li>Contact</li>
-                </ul>
+        <div class="footer_conteneur_superieur">
+            <div class="parent_footer_logo">
+                <img src="./ressources/logo.png" alt="Logo Klivio">
             </div>
-            <div>
-                <h2>Coordonnées</h2>
-                <ul>
-                    <li>1 place république,<br>75003 Paris</li>
-                    <li>01.02.03.04.05</li>
-                    <li>contact@klivio.fr</li>
-                </ul>
+            
+            <div class="footer_elements_central_superieur">
+                <div class="footer_mentions">
+                    <h2>Mentions Légales</h2>
+                    <ul>
+                        <li><a href="#">CGU</a></li>
+                        <li><a href="#">CGV</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer_coordonnees">
+                    <h2>Coordonnées</h2>
+                    <ul>
+                        <li>1 place république,<br>75003 Paris</li>
+                        <li>01.02.03.04.05</li>
+                        <li class="coordonnees_email">contact@klivio.fr</li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <button>Connexion</button>
-                <button>Inscription</button>
+            <div class="footer_buttons">
+                <button class="footer_button_connexion">Connexion</button>
+                <button class="footer_button_inscription">Inscription</button>
             </div>
         </div>
-        <hr>
-        <!--ligne seule verte-->
-        <div>
+
+        <hr class="ligne_basse_footer">
+        <div class="footer_conteneur_inferieur">
             <p>© Klivio - 2025</p>
-            <p>Suivrez - nous <img src="./ressources/icone/facebook.svg" alt="logo réseau social facebook"><img src="./ressources/icone/X.svg" alt="logo réseau social X"><img src="./ressources/icone/instagram.svg" alt="logo reseau social instagram"><img src="./ressources/icone/linkedin.svg" alt="logo réseau social linkedin"></p>
+            <div class="footer_reseaux">
+                <a href="#" class="suivez-nous">Suivrez - nous</a>
+                <img class="facebook" src="./ressources/icone/facebook.svg" alt="logo réseau social facebook">
+                <img class="X" src="./ressources/icone/X.svg" alt="logo réseau social X">
+                <img class="instagram" src="./ressources/icone/instagram.svg" alt="logo reseau social instagram">
+                <img class="linkedin" src="./ressources/icone/linkedin.svg" alt="logo réseau social linkedin">
+            </div>
         </div>
     </footer>
 </body>
