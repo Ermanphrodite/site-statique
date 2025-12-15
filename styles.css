@@ -611,18 +611,71 @@ header nav button.inscriptionButton {
 
 .li1, .li2, .li3, .li4, .li5, .li6 {
     position: relative;
+    padding-left: 35px;
+    margin-left: 45px;
 }
 
-.li1::before, .li2::before, .li3::before, .li4::before, .li5::before, .li6::before  {
-    content:"\f00c";
+.li1::before {
+    content:"\f060";
+    transform: rotate(135deg);
     font-family: "Font Awesome 6 Free";
-    font-weight: 600;
+    font-weight: 900;
     position: absolute;
     font-size: 30px;
     left: -47px;
     color: var(--vert)
 }
 
+
+.li2::before {
+    content:"\f303";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 22.55px;
+    left: -47px;
+    color: var(--vert)
+}
+
+.li3::before {
+    content:"\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 25px;
+    left: -47px;
+    color: var(--vert)
+}
+
+.li4::before {
+    content:"\f005";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 25px;
+    left: -47px;
+    color: var(--vert)
+}
+
+.li5::before {
+    content:"\f017";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 25px;
+    left: -47px;
+    color: var(--vert)
+}
+
+.li6::before {
+    content:"\f27a";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 25px;
+    left: -47px;
+    color: var(--vert)
+}
 
 
 
@@ -706,15 +759,55 @@ header nav button.inscriptionButton {
     position: relative;
 }
 
-.li7::before, .li8::before, .li9::before, .li10::before, .li11::before {
-    content:"\f00c";
+.li7::before {
+    content:"\f4c0";
     font-family: "Font Awesome 6 Free";
     font-weight: 600;
     position: absolute;
     font-size: 30px;
     left: -47px;
     color: var(--blanc);
- }
+}
+
+.li8::before {
+    content:"\f004";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 30px;
+    left: -47px;
+    color: var(--blanc);
+}
+
+.li9::before {
+    content:"\f304";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 30px;
+    left: -47px;
+    color: var(--blanc);
+}
+
+.li10::before {
+    content:"\f013";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 30px;
+    left: -47px;
+    color: var(--blanc);
+}
+
+.li11::before {
+    content:"\f007";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 30px;
+    left: -47px;
+    color: var(--blanc);
+}
 
 
 /* À PROPOS DE KLIVIO */
@@ -790,7 +883,6 @@ header nav button.inscriptionButton {
     align-content: center;
 }
 
-
 .form_nous_contacter {
     width: 100%;
     display: flex;
@@ -849,7 +941,7 @@ textarea {
 }
 
 .buttonEnvoyer button {
-    width: 20.9261905vw;
+    width: 20.9261905vw; 
     height: 45.3px;
     border-radius: 6px;
     background: var(--vert);
@@ -950,6 +1042,41 @@ footer {
     font-size: 15px;
     line-height: 24px;
     padding-left: 43px;
+    list-style-type: none;
+}
+
+.li12, .li13, .li14 {
+    position: relative;
+}
+
+.li12::before {
+    content:"\f3c5";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 22.55px;
+    left: -35px;
+    color: var(--blanc)
+}
+
+.li13::before {
+    content:"\f095";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 22.55px;
+    left: -35px;
+    color: var(--blanc)
+}
+
+.li14::before {
+    content:"\f0e0";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 22.55px;
+    left: -35px;
+    color: var(--blanc)
 }
 
 .coordonnees_email {
@@ -1019,6 +1146,8 @@ footer {
     margin-top: 13px;
 }
 
+
+
 .suivez-nous {
     margin-right: 24px;
     font-weight: 400;
@@ -1041,7 +1170,6 @@ footer {
 .instagram {
     margin-right: 15px;
 }
-
 
 
 
@@ -1159,6 +1287,12 @@ footer {
         margin-bottom: 22px;
     }
 
+    .li1, .li2, .li3, .li4, .li5, .li6 {
+    position: relative;
+    padding-left: 0;
+    margin-left: 0;
+}
+
     .li7::before, .li8::before, .li9::before, .li10::before, .li11::before {
     left: -70px;
     }
@@ -1181,9 +1315,8 @@ footer {
         padding-right: 3.63095238vw;
     }
 
-
     .elements_apropos_klivio h1 {
-        width: 322.96px;
+        width: 82.17811704834606vw;
         font-weight: 900;
         font-size: 30px;
         margin-bottom: 20px;
@@ -1206,9 +1339,7 @@ footer {
         width: 100%;
         max-width: 54.45292621vw;
         height: auto;
-    }
-
-    
+    }    
 }
 
 @media screen and (max-width: 768px) {
@@ -1255,8 +1386,8 @@ footer {
     }
 
     .hero-texts button {
-    margin-top: 27px;
-    margin-bottom: 34px;
+        margin-top: 27px;
+        margin-bottom: 34px;
     }
 
 
@@ -1364,12 +1495,26 @@ footer {
         flex-direction: column;
         align-items: center;
         margin: 0;
+        gap: 0;
     }
 
     .footer_mentions {
         margin: 0;
         margin-top: 45px;
-        margin-bottom: 16px;
+        margin-bottom: 32px;
         text-align: center;
+    }
+
+    .footer_coordonnees {
+        text-align: start;
+    }
+    .footer_coordonnees h2 {
+        text-align: center;
+        margin-bottom: 21px;
+    }
+    .footer_coordonnees ul {
+        list-style-type: none;
+        padding: 0;
+        padding-left: 40px;
     }
 }
