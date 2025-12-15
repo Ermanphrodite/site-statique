@@ -548,14 +548,21 @@ header nav button.inscriptionButton {
 .avantages_Klivio {
     width: 100%;
     display: flex;
+    background-color: #F5F5F5;
+    justify-content: center;
+}
+
+.groupe-elements_Avantages_Klivio {
+    width: 100%;
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #F5F5F5;
     padding-top: 76px;
     padding-left: 5.83333333333333vw;
     padding-right: 6.13095238095238vw;
     padding-bottom: 93px;
     gap: 4.22619047619048vw;
+    max-width: 1680px;
 }
 
 .elements_Avantages_Klivio {
@@ -630,24 +637,29 @@ header nav button.inscriptionButton {
 
 /* CREEZ VOS FORMATIONS */
 
-.creer_Formations {
+.elements_creer_formations {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px;
+}
+
+.groupe-elements_creer_formations {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: var(--vert);
     padding-top: 76px;
-    padding-left: 5.83333333333333vw;
-    padding-right: 6.13095238095238vw;
+    padding-left: 6.01190476190476vw;
+    padding-right: 5.05952380952381vw;
     padding-bottom: 93px;
-    gap: 4.22619047619048vw;
+    gap: 8.75vw;
 }
 
-.elements_creer_formations {
-    display: flex;
-    flex-direction: column;
-    padding-top: 3px;
-}
+    .elements_creer_formations .h1-mobile {
+        display: none;
+    }
+
 
 .elements_creer_formations h1 {
     width: 100%;
@@ -729,11 +741,8 @@ header nav button.inscriptionButton {
         margin-left: 6vw;
     }
 
-    .avantages_Klivio {
+    .groupe-elements_Avantages_Klivio {
         flex-direction: column;
-    }
-
-    .avantages_Klivio {
         padding: 0;
         padding-top: 25px;
         align-items: center;    
@@ -742,6 +751,14 @@ header nav button.inscriptionButton {
     .elements_Avantages_Klivio {
         display: flex;
         align-items: center;
+    }
+
+    .elements_creer_formations .h1-desk {
+        display: none;
+    }
+
+    .elements_creer_formations .h1-mobile {
+        display: flex;
     }
 
     .elements_Avantages_Klivio h1 {
@@ -767,6 +784,49 @@ header nav button.inscriptionButton {
         background-position: center;
         margin-bottom: 38px;
     }
+
+    
+
+
+
+
+    .groupe-elements_creer_formations {
+        flex-direction: column;
+        padding: 0;
+        padding-top: 27px;
+        align-items: center;    
+        gap: 0;
+    }
+
+    .elements_creer_formations {
+        display: flex;
+        align-items: center;
+    }
+
+    .elements_creer_formations h1 {
+        margin-bottom: 13px;
+        width: 366px;
+        height: 79px;
+        text-align: center;
+    }
+
+    .elements_creer_formations ul {
+        margin-top: 0;
+        font-weight: 400;
+        font-size: 20px;
+        padding-left: 97px;
+        padding-right: 24px;
+        margin-bottom: 30px;
+    }
+
+    .parent_image_creer_formations img {
+        width: 82.44274809160305vw;
+        height: 243px;
+        object-fit: cover;
+        background-position: center;
+        margin-bottom: 22px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -837,45 +897,5 @@ header nav button.inscriptionButton {
 
     .cards_Avis_Clients p {
         text-align: left;
-    }
-
-
-
-
-
-
-    .creer_Formations {
-        padding: 0;
-        padding-top: 25px;
-        align-items: center;    
-    }
-
-    .elements_creer_formations {
-        display: flex;
-        align-items: center;
-    }
-
-    .elements_creer_formations h1 {
-        width: 349px;
-        height: 93px;
-        font-weight: 900;
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .elements_creer_formations ul {
-        margin-top: 0;
-        font-weight: 400;
-        font-size: 20px;
-        padding-left: 75px;
-        padding-right: 22px;
-    }
-
-    .parent_image_creer_formations img {
-        width: 83.20610687022901vw;
-        height: 244px;
-        object-fit: cover;
-        background-position: center;
-        margin-bottom: 38px;
     }
 }
