@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: 'montserrat';
     src: 
@@ -158,6 +162,7 @@ header nav button.inscriptionButton {
     background-position: center;
     background-size: cover;
     padding: 156.5px 0;
+    margin-top: 80px;
 }
 
 .hero-texts {
@@ -181,7 +186,7 @@ header nav button.inscriptionButton {
 
 }
 
-.hero-texts h3 {
+.hero-texts h2 {
     font-size: clamp(10px, 1.19047619vw, 20px);
     font-weight: 500;
     font-style: normal;
@@ -543,10 +548,11 @@ header nav button.inscriptionButton {
     height: auto;
 }
 
-.cards_Avis_Clients h4 {
+.cards_Avis_Clients h3 {
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
+    color: var(--bleu);
 }
 
 .cards_Avis_Clients p {
@@ -992,16 +998,30 @@ textarea {
     border: none;
 }
 
-.form_nous_contacter input::placeholder, .form_nous_contacter textarea::placeholder {
+.form_nous_contacter input[type="text"] {
+    color: #FFFFFF;
     padding-left: 18px;
-    color: var(--blanc);
+}
+
+.form_nous_contacter input::placeholder, .form_nous_contacter textarea::placeholder {
+    color: #FFFFFF;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 24px;
 }
 
-.form_nous_contacter textarea::placeholder {
+.form_nous_contacter textarea {
     padding-top: 15px;
+    padding-left: 16.75px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+input::placeholder {
+    color: #e0e0e0;
+    opacity: 1;
 }
 
 footer {
@@ -1198,6 +1218,12 @@ footer {
     margin-right: 15px;
 }
 
+
+.apropos_klivio, .formations_Populaires, .formations_Recentes {
+    scroll-margin-top: 80px;
+}
+
+/* scroll-margin-top */
 
 
 
@@ -1440,6 +1466,7 @@ footer {
     .hero {
         padding: 0 0;
         padding-top: 80px;
+        margin: 0;
     }
 
     
