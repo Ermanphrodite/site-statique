@@ -657,18 +657,20 @@ header nav button.inscriptionButton {
     position: absolute;
     font-size: 30px;
     left: -47px;
-    color: var(--vert)
+    color: var(--vert);
+    -webkit-text-stroke: var(--vert);
 }
 
 
 .li2::before {
-    content:"\f303";
+    content:"\f304";
     font-family: "Font Awesome 6 Free";
     font-weight: 600;
     position: absolute;
     font-size: 22.55px;
     left: -47px;
-    color: var(--vert)
+    color: transparent;
+    -webkit-text-stroke: 2px var(--vert);
 }
 
 .li3::before {
@@ -678,7 +680,8 @@ header nav button.inscriptionButton {
     position: absolute;
     font-size: 25px;
     left: -47px;
-    color: var(--vert)
+    color: transparent;
+    -webkit-text-stroke: 2px var(--vert);
 }
 
 .li4::before {
@@ -688,7 +691,8 @@ header nav button.inscriptionButton {
     position: absolute;
     font-size: 25px;
     left: -47px;
-    color: var(--vert)
+    color: transparent;
+    -webkit-text-stroke: 2px var(--vert);
 }
 
 .li5::before {
@@ -698,7 +702,8 @@ header nav button.inscriptionButton {
     position: absolute;
     font-size: 25px;
     left: -47px;
-    color: var(--vert)
+    color: transparent;
+    -webkit-text-stroke: 2px var(--vert);
 }
 
 .li6::before {
@@ -708,7 +713,8 @@ header nav button.inscriptionButton {
     position: absolute;
     font-size: 25px;
     left: -47px;
-    color: var(--vert)
+    color: transparent;
+    -webkit-text-stroke: 2px var(--vert);
 }
 
 
@@ -799,7 +805,8 @@ header nav button.inscriptionButton {
     position: absolute;
     font-size: 30px;
     left: -70px;
-    color: var(--blanc);
+    color: var(--vert);
+    -webkit-text-stroke: 2px var(--blanc);
 }
 
 .li8::before {
@@ -809,7 +816,8 @@ header nav button.inscriptionButton {
     position: absolute;
     font-size: 30px;
     left: -70px;
-    color: var(--blanc);
+    color: var(--vert);
+    -webkit-text-stroke: 2px var(--blanc);
 }
 
 .li9::before {
@@ -819,7 +827,8 @@ header nav button.inscriptionButton {
     position: absolute;
     font-size: 30px;
     left: -70px;
-    color: var(--blanc);
+    color: var(--vert);
+    -webkit-text-stroke: 2px var(--blanc);
 }
 
 .li10::before {
@@ -829,7 +838,8 @@ header nav button.inscriptionButton {
     position: absolute;
     font-size: 30px;
     left: -70px;
-    color: var(--blanc);
+    color: var(--vert);
+    -webkit-text-stroke: 2px var(--blanc);
 }
 
 .li11::before {
@@ -839,7 +849,8 @@ header nav button.inscriptionButton {
     position: absolute;
     font-size: 30px;
     left: -70px;
-    color: var(--blanc);
+    color: var(--vert);
+    -webkit-text-stroke: 2px var(--blanc);
 }
 
 
@@ -1103,7 +1114,8 @@ footer {
     position: absolute;
     font-size: 22.55px;
     left: -35px;
-    color: var(--blanc)
+    color: transparent;
+    -webkit-text-stroke: 1px var(--blanc);
 }
 
 .li13::before {
@@ -1113,7 +1125,8 @@ footer {
     position: absolute;
     font-size: 22.55px;
     left: -35px;
-    color: var(--blanc)
+    color: transparent;
+    -webkit-text-stroke: 1px var(--blanc);
 }
 
 .li14::before {
@@ -1123,7 +1136,8 @@ footer {
     position: absolute;
     font-size: 22.55px;
     left: -35px;
-    color: var(--blanc)
+    color: transparent;
+    -webkit-text-stroke: 1px var(--blanc);
 }
 
 .coordonnees_email {
@@ -1527,7 +1541,6 @@ button {
         position: absolute;
         font-size: 30px;
         left: -80px;
-        color: var(--blanc);
     }
 
     .li8::before {
@@ -1537,7 +1550,6 @@ button {
         position: absolute;
         font-size: 30px;
         left: -80px;
-        color: var(--blanc);
     }
 
     .li9::before {
@@ -1547,7 +1559,6 @@ button {
         position: absolute;
         font-size: 30px;
         left: -80px;
-        color: var(--blanc);
     }
 
     .li10::before {
@@ -1557,7 +1568,6 @@ button {
         position: absolute;
         font-size: 30px;
         left: -80px;
-        color: var(--blanc);
     }
 
     .li11::before {
@@ -1567,7 +1577,6 @@ button {
         position: absolute;
         font-size: 30px;
         left: -80px;
-        color: var(--blanc);
     }
 
     .elements_form_nous_contacter {
