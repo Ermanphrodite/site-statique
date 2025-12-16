@@ -1004,7 +1004,7 @@ textarea {
 
 .ligne_basse_nous_contacter {
     height: 18px;
-    background: var(--gradient);
+    background: linear-gradient(90deg, #4ade80 0%, #34d399 100%);;
     margin-top: 77.42px;
     border: none;
 }
@@ -1017,7 +1017,7 @@ textarea {
 .form_nous_contacter input::placeholder, .form_nous_contacter textarea::placeholder {
     color: #FFFFFF;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
 }
 
@@ -1025,14 +1025,8 @@ textarea {
     padding-top: 15px;
     padding-left: 16.75px;
     color: #FFFFFF;
-    font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
-}
-
-input::placeholder {
-    color: #e0e0e0;
-    opacity: 1;
 }
 
 footer {
@@ -1260,13 +1254,29 @@ button {
 
 
 @media screen and (max-width: 900px) {
+
+    .parent-h2-Formations_Populaires {
+        margin: 0;
+        margin-top: 20px;
+        line-height: 37px;
+    }
+
+    .parent-h2-Formations_Populaires h2 {
+        font-size: 30px;
+
+    }
+
     header nav a {
         margin-left: 6vw;
     }
 
     .parent-h2-Formations_Populaires h2 {
     font-weight: 750;
-}
+    }
+
+    .parent-h2-Formations_Recentes h2 {
+        font-size: 30px;
+    }
 
     .card_Formations_Recentes h3 {
         width: 100%;
@@ -1380,10 +1390,10 @@ button {
     }
 
     .li1, .li2, .li3, .li4, .li5, .li6 {
-    position: relative;
-    padding-left: 0;
-    margin-left: 0;
-}
+        position: relative;
+        padding-left: 0;
+        margin-left: 0;
+    }
 
     .li7::before, .li8::before, .li9::before, .li10::before, .li11::before {
     left: -70px;
@@ -1491,7 +1501,7 @@ button {
         margin-top: 47px;
         line-height: 37px;
     }
-    .hero-texts h3 {
+    .hero-texts h2 {
         width: 91.6030534351145vw;
         margin-top: 27px;
         margin-bottom: 0;
@@ -1510,7 +1520,7 @@ button {
         height: auto;
         width: 73.5368957vw;
         text-align: center;
-        font-size: 31px;
+        font-size: 30px;
     }
     .elements_Avis_Clients {
         flex-direction: column;
