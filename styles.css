@@ -43,6 +43,8 @@ header {
     height: 80px;
     background-color: var(--bleu);
     display: flex;
+    position: fixed;
+    z-index: 1;
 }
 
 /* NAVBAR */
@@ -137,6 +139,13 @@ header nav button.inscriptionButton {
     display: none;
 }
 
+.burger::after {
+    content: "\f0c9";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    pointer-events: none;
+    color: var(--blanc);
+}
 
 
 
@@ -222,15 +231,21 @@ header nav button.inscriptionButton {
 }
 
 .parent-h2-Formations_Populaires {
-    width: 100%;
+    width: 85.2417303vw;
     display: flex;
+    font-size: 25px;
     justify-content: flex-start;
     align-items: center;
-    height: 72px;
+    height: 80px;
     margin-top: 30px;
     color: var(--bleu);
-    font-weight: 800;   
+    font-weight: 900;   
 }
+
+.parent-h2-Formations_Populaires h2 {
+    font-weight: 800;
+}
+
 
 .groupe_Cards_Formations_Populaires {
     width: 100%;
@@ -362,14 +377,19 @@ header nav button.inscriptionButton {
 }
 
 .parent-h2-Formations_Recentes {
-    width: 100%;
+    width: 85.2417303vw;
     display: flex;
+    font-size: 25px;
     justify-content: flex-start;
     align-items: center;
-    height: 72px;
+    height: 80px;
     margin-top: 30px;
     color: var(--blanc);
-    font-weight: 800;   
+    font-weight: 900;
+}
+
+.parent-h2-Formations_Populaires h2 {
+    font-weight: 800;
 }
 
 .groupe_Cards_Formations_Recentes {
@@ -398,6 +418,7 @@ header nav button.inscriptionButton {
     line-height: 36px;
     color: var(--blanc);
     margin-top: 21px;
+    letter-spacing: -0.07vw;
 }
 
 .para_card_Formations_Recentes-1 {
@@ -565,7 +586,6 @@ header nav button.inscriptionButton {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 76px;
     padding-left: 5.83333333333333vw;
     padding-right: 6.13095238095238vw;
     padding-bottom: 93px;
@@ -583,11 +603,11 @@ header nav button.inscriptionButton {
     width: 100%;
     display: flex;
     font-weight: 900;
-    font-size: 40px;
-    line-height: 36px;
+    font-size: 35px;
+    line-height: 50px;
     text-transform: uppercase;
     color: var(--bleu);
-
+    margin-top: 79px;
 }
 
 .elements_Avantages_Klivio ul {
@@ -609,6 +629,7 @@ header nav button.inscriptionButton {
 .parent_image_Avantages_Klivio img {
     max-width: 100%;
     height: auto;
+    margin-top: 76px;
 }
 
 .elements_Avantages_Klivio ul {
@@ -703,6 +724,7 @@ header nav button.inscriptionButton {
     display: flex;
     flex-direction: column;
     padding-top: 3px;
+    margin-left: 4.8809524vw;
 }
 
 .groupe-elements_creer_formations {
@@ -715,7 +737,6 @@ header nav button.inscriptionButton {
     padding-left: 6.01190476190476vw;
     padding-right: 5.05952380952381vw;
     padding-bottom: 93px;
-    gap: 8.75vw;
     max-width: 1680px;
 }
 
@@ -744,7 +765,7 @@ header nav button.inscriptionButton {
     font-size: 24px;
     line-height: 28px;
     max-width: 616px;
-    padding-left: 3.86904761904762vw;
+    margin-left: 3.86904761904762vw;
 }
 
 .parent_image_creer_formations {
@@ -771,7 +792,7 @@ header nav button.inscriptionButton {
     font-weight: 600;
     position: absolute;
     font-size: 30px;
-    left: -47px;
+    left: -70px;
     color: var(--blanc);
 }
 
@@ -781,7 +802,7 @@ header nav button.inscriptionButton {
     font-weight: 600;
     position: absolute;
     font-size: 30px;
-    left: -47px;
+    left: -70px;
     color: var(--blanc);
 }
 
@@ -791,7 +812,7 @@ header nav button.inscriptionButton {
     font-weight: 600;
     position: absolute;
     font-size: 30px;
-    left: -47px;
+    left: -70px;
     color: var(--blanc);
 }
 
@@ -801,7 +822,7 @@ header nav button.inscriptionButton {
     font-weight: 600;
     position: absolute;
     font-size: 30px;
-    left: -47px;
+    left: -70px;
     color: var(--blanc);
 }
 
@@ -811,7 +832,7 @@ header nav button.inscriptionButton {
     font-weight: 600;
     position: absolute;
     font-size: 30px;
-    left: -47px;
+    left: -70px;
     color: var(--blanc);
 }
 
@@ -850,12 +871,14 @@ header nav button.inscriptionButton {
     line-height: 36px;
     text-transform: uppercase;
     margin-bottom: 41px;
+    color: var(--bleu);
 }
 
 .elements_apropos_klivio p {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
+    color: var(--bleu);
 }
 
 .parent_logo_apropos_klivio {
@@ -920,7 +943,7 @@ textarea {
     height: 194.64px;
 }
 
-.nous_contacter h2{
+.nous_contacter h2 {
     display: flex;
     justify-content: center;
     font-weight: 900;
@@ -932,12 +955,15 @@ textarea {
 }
 
 .nous_contacter hr.ligne_sous_nous_contacter {
-    width: 20.8333333vw;
-    border: 1px solid #44DD8A;
-    text-align: center;
     margin: 0 auto;
     margin-top: 39px;
+    height: 1px;
+    width: 20.8333333vw;
+    font-weight: 500;
+    background: var(--vert);
+    border: none;
 }
+
 
 .buttonEnvoyer {
     margin-top: 54.64px;
@@ -977,11 +1003,6 @@ textarea {
 .form_nous_contacter textarea::placeholder {
     padding-top: 15px;
 }
-
-
-
-
-
 
 footer {
     display: flex;
@@ -1128,7 +1149,7 @@ footer {
 
 .ligne_basse_footer {
     background-color: var(--vert);
-    height: 1px;
+    height: 2px;
     border: none;
     margin-bottom: 25px;
 }
@@ -1201,10 +1222,24 @@ footer {
         margin-left: 6vw;
     }
 
+    .parent-h2-Formations_Populaires h2 {
+    font-weight: 750;
+}
+
+    .card_Formations_Recentes h3 {
+        width: 100%;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: var(--blanc);
+        margin-top: 21px;
+        letter-spacing: -0.12vw;
+    }
+
     .groupe-elements_Avantages_Klivio {
         flex-direction: column;
         padding: 0;
-        padding-top: 25px;
+        padding-top: 22px;
         align-items: center;    
     }
 
@@ -1227,10 +1262,11 @@ footer {
         font-weight: 900;
         font-size: 30px;
         text-align: center;
+        margin-top: 0;
     }
 
     .elements_Avantages_Klivio ul {
-        margin-top: 0;
+        margin-top: 17px;
         font-weight: 400;
         font-size: 20px;
         padding-left: 75px;
@@ -1243,6 +1279,7 @@ footer {
         object-fit: cover;
         background-position: center;
         margin-bottom: 38px;
+        margin-top: 0;
     }
 
     .groupe-elements_creer_formations {
@@ -1369,33 +1406,55 @@ footer {
         margin-left: 27px;
     }
 
+    .parent-h2-Formations_Populaires {
+        font-size: 21px;
+    }
+
+    .parent-h2-Formations_Populaires H2 {
+        font-weight: 780;
+    }
+
+
+    .parent-h2-Formations_Recentes {
+        font-size: 21px;
+    }
+
+    .parent-h2-Formations_Recentes h2 {
+        font-weight: 780;
+    }
+
     .burger {
         display: flex;
         padding: 0;
         margin: 0;
-        width: 24px;
-        height: 24px;
+        width: 56px;
+        height: 56px;
         justify-content: center;
         align-items: center;
         background-color: transparent;
         color: var(--blanc);
-        font-size: 30px;
-        margin-right: 37px;
+        font-size: 5vw;
+        margin-right: 18px;
     }
 
     .hero {
         padding: 0 0;
+        padding-top: 80px;
     }
 
     
-    .hero-texts h2 {
+    .hero-texts h1 {
         width: 91.6030534351145vw;
         margin-top: 47px;
+        line-height: 37px;
     }
     .hero-texts h3 {
         width: 91.6030534351145vw;
         margin-top: 27px;
         margin-bottom: 0;
+        line-height: 24px;
+        font-weight: 500;
+        font-size: 20px;
     }
 
     .hero-texts button {
@@ -1403,9 +1462,12 @@ footer {
         margin-bottom: 34px;
     }
 
-
     .avis_Clients h2 {
         margin-top: 28px;
+        height: auto;
+        width: 73.5368957vw;
+        text-align: center;
+        font-size: 31px;
     }
     .elements_Avis_Clients {
         flex-direction: column;
@@ -1425,6 +1487,60 @@ footer {
         text-align: left;
     }
 
+    .groupe-elements_creer_formations ul {
+        padding-left: 75px;
+    }
+
+    .li7::before {
+        content:"\f4c0";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        position: absolute;
+        font-size: 30px;
+        left: -80px;
+        color: var(--blanc);
+    }
+
+    .li8::before {
+        content:"\f004";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        position: absolute;
+        font-size: 30px;
+        left: -80px;
+        color: var(--blanc);
+    }
+
+    .li9::before {
+        content:"\f304";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        position: absolute;
+        font-size: 30px;
+        left: -80px;
+        color: var(--blanc);
+    }
+
+    .li10::before {
+        content:"\f013";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        position: absolute;
+        font-size: 30px;
+        left: -80px;
+        color: var(--blanc);
+    }
+
+    .li11::before {
+        content:"\f007";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        position: absolute;
+        font-size: 30px;
+        left: -80px;
+        color: var(--blanc);
+    }
+
     .elements_form_nous_contacter {
         flex-direction: column;
         align-items: center;
@@ -1441,6 +1557,7 @@ footer {
         text-transform: uppercase;
         margin: 0;
         margin-top: 29px;
+        margin-bottom: 10px;
 
     }
 

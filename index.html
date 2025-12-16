@@ -14,14 +14,14 @@
     <header>
         <nav class="navBar">
             <img src="./ressources/logo.png" alt="logo de Klivio" title="Logo de Klivio">
-            <a href="#">Les formations</a>            
-            <form class="centerNavbar">
+            <a href="#forma_popu" aria-label='Bouton "les formations" qui te dirigent vers les formations' title="Les formations">Les formations</a>            
+            <form class="centerNavbar" aria-label="Recherchez sur le site" title="Barre de recherche">
                 <label for="searchBar"></label>
                 <input type="search" name="searchBar" id="searchBar" aria-label="Rechercher" placeholder="Rechercher">
             </form>
-            <button class="connexionButton">Connexion</button>
-            <button class="inscriptionButton">Inscription</button>
-            <button class="burger">☰</button>
+            <button class="connexionButton" aria-label="bouton qui ouvre le menu de connexion" title="Connexion">Connexion</button>
+            <button class="inscriptionButton" aria-label="bouton qui ouvre le menu d'inscription" title="Inscription">Inscription</button>
+            <button class="burger" aria-label="Bouton qui ouvre le menu déroulant"></button>
         </nav>
     </header>
     
@@ -30,10 +30,10 @@
             <div class="hero-texts">
                 <h1>KLIVIO, L'ALLIÉ DE VOTRE PROGRESSION</h1>
                 <h3>LES MEILLEURES FORMATIONS SUR LE DÉVELOPPEMENT PERSONNEL</h3>
-                <button>En savoir plus</button>
+                <button onclick="window.location.href='#apropos'" aria-label="bouton qui mène aux informations complémetaires du site">En savoir plus</button>
             </div>
         </section>
-        <section class="formations_Populaires">
+        <section id="forma_popu" class="formations_Populaires">
             <div class="elements_Formations_Populaires">
                 <div class="parent-h2-Formations_Populaires">
                     <h2 class="h2-Formations_Populaires">Les formations populaires</h2>
@@ -116,12 +116,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="button_Formation_Populaires">
-                    <button>Voir plus de formations</button>
+                <div onclick="window.location.href='#formarecente'" class="button_Formation_Populaires">
+                    <button title="Voir plus de formations" aria-label="bouton qui mène aux autres formation récentes">Voir plus de formations</button>
                 </div>
             </div>
         </section>
-        <section class="formations_Recentes">
+        <section id="formarecente" class="formations_Recentes">
             <div class="elements_Formations_Recentes">
                 <div class="parent-h2-Formations_Recentes">
                     <h2 class="h2-Formations_Recentes">Les formations récentes</h2>
@@ -277,7 +277,7 @@
             </div>
         </section>
 
-        <section class="apropos_klivio">
+        <section  id="apropos" class="apropos_klivio">
             <div class="responsive_apropos_klivio">
                 <div class="elements_apropos_klivio">
                     <h2>À PROPOS DE KLIVIO</h2>
