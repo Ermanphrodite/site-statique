@@ -1004,7 +1004,7 @@ textarea {
 
 .ligne_basse_nous_contacter {
     height: 18px;
-    background: linear-gradient(90deg, #4ade80 0%, #34d399 100%);;
+    background: linear-gradient(90.01deg, #44DD8A 2.38%, #18A0FB 100%);
     margin-top: 77.42px;
     border: none;
 }
@@ -1630,6 +1630,7 @@ button {
 
     .ligne_basse_nous_contacter {
         margin-top: 38px;
+        background: linear-gradient(90deg, #4ade80 0%, #34d399 100%);
     }
 
     .footer_conteneur_inferieur {
