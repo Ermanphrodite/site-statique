@@ -172,7 +172,7 @@ header nav button.inscriptionButton {
 
 }
 
-.hero-texts h2 {
+.hero-texts h3 {
     font-size: clamp(10px, 1.19047619vw, 20px);
     font-weight: 500;
     font-style: normal;
@@ -221,7 +221,7 @@ header nav button.inscriptionButton {
     flex-direction: column;
 }
 
-.parent-h1-Formations_Populaires {
+.parent-h2-Formations_Populaires {
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -252,7 +252,7 @@ header nav button.inscriptionButton {
     padding-left: 12px;
 }
 
-.card_Formations_Populaires h2 {
+.card_Formations_Populaires h3 {
     width: 100%;
     font-weight: 700;
     font-size: 24px;
@@ -361,7 +361,7 @@ header nav button.inscriptionButton {
     flex-direction: column;
 }
 
-.parent-h1-Formations_Recentes {
+.parent-h2-Formations_Recentes {
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -391,7 +391,7 @@ header nav button.inscriptionButton {
     padding-left: 12px;
 }
 
-.card_Formations_Recentes h2 {
+.card_Formations_Recentes h3 {
     width: 100%;
     font-weight: 700;
     font-size: 24px;
@@ -497,7 +497,7 @@ header nav button.inscriptionButton {
     align-items: center;
 }
 
-.avis_Clients h1 {
+.avis_Clients h2 {
     margin-top: 58px;
     font-weight: 900;
     font-size: 40px;
@@ -579,7 +579,7 @@ header nav button.inscriptionButton {
     padding-top: 3px;
 }
 
-.elements_Avantages_Klivio h1 {
+.elements_Avantages_Klivio h2 {
     width: 100%;
     display: flex;
     font-weight: 900;
@@ -719,12 +719,12 @@ header nav button.inscriptionButton {
     max-width: 1680px;
 }
 
-.parent_image_creer_formations .h1-mobile {
+.parent_image_creer_formations .h2-mobile {
         display: none;
 }
 
 
-.elements_creer_formations h1 {
+.elements_creer_formations h2 {
     width: 100%;
     display: flex;
     font-weight: 900;
@@ -843,7 +843,7 @@ header nav button.inscriptionButton {
 
 }
 
-.elements_apropos_klivio h1 {
+.elements_apropos_klivio h2 {
     width: 100%;
     font-weight: 900;
     font-size: 40px;
@@ -920,7 +920,7 @@ textarea {
     height: 194.64px;
 }
 
-.nous_contacter h1{
+.nous_contacter h2{
     display: flex;
     justify-content: center;
     font-weight: 900;
@@ -1016,7 +1016,7 @@ footer {
     gap: 65px;
 }
 
-.footer_mentions h2 {
+.footer_mentions h3 {
     font-weight: 700;
     font-size: 15px;
     line-height: 24px;
@@ -1036,7 +1036,7 @@ footer {
 
 }
 
-.footer_coordonnees h2 {
+.footer_coordonnees h3 {
     font-weight: 700;
     font-size: 15px;
     line-height: 24px;
@@ -1181,7 +1181,7 @@ footer {
 
 
 @media screen and (max-width: 1678px) {
-    .parent-h1-Formations_Populaires, .parent-h1-Formations_Recentes {
+    .parent-h2-Formations_Populaires, .parent-h2-Formations_Recentes {
         justify-content: center;
         text-align: center;
     }
@@ -1213,15 +1213,15 @@ footer {
         align-items: center;
     }
 
-    .elements_creer_formations .h1-desk {
+    .elements_creer_formations .h2-desk {
         display: none;
     }
 
-    .elements_creer_formations .h1-mobile {
+    .elements_creer_formations .h2-mobile {
         display: flex;
     }
 
-    .elements_Avantages_Klivio h1 {
+    .elements_Avantages_Klivio h2 {
         width: 349px;
         height: 93px;
         font-weight: 900;
@@ -1258,18 +1258,18 @@ footer {
         align-items: center;
     }
 
-    .elements_creer_formations h1 {
+    .elements_creer_formations h2 {
         margin-bottom: 13px;
         width: 366px;
         height: 79px;
         text-align: center;
     }
 
-    .elements_creer_formations .h1-desk {
+    .elements_creer_formations .h2-desk {
         display: none;
     }
 
-    .parent_image_creer_formations .h1-mobile {
+    .parent_image_creer_formations .h2-mobile {
         display: flex;
         justify-content: center;
         font-weight: 900;
@@ -1328,7 +1328,7 @@ footer {
         padding-right: 3.63095238vw;
     }
 
-    .elements_apropos_klivio h1 {
+    .elements_apropos_klivio h2 {
         width: 82.17811704834606vw;
         font-weight: 900;
         font-size: 30px;
@@ -1388,11 +1388,11 @@ footer {
     }
 
     
-    .hero-texts h1 {
+    .hero-texts h2 {
         width: 91.6030534351145vw;
         margin-top: 47px;
     }
-    .hero-texts h2 {
+    .hero-texts h3 {
         width: 91.6030534351145vw;
         margin-top: 27px;
         margin-bottom: 0;
@@ -1404,7 +1404,7 @@ footer {
     }
 
 
-    .avis_Clients h1 {
+    .avis_Clients h2 {
         margin-top: 28px;
     }
     .elements_Avis_Clients {
@@ -1433,7 +1433,7 @@ footer {
         margin-top: 0px;
     }
 
-    .nous_contacter h1 {
+    .nous_contacter h2 {
         font-weight: 900;
         font-size: 30px;
         line-height: 36px;
@@ -1519,7 +1519,7 @@ footer {
     .footer_coordonnees {
         text-align: start;
     }
-    .footer_coordonnees h2 {
+    .footer_coordonnees h3 {
         text-align: center;
         margin-bottom: 21px;
     }
